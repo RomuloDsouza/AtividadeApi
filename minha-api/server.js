@@ -49,6 +49,17 @@ api.put("/cliente/update/cpfcnpj/12345678901", (req, res) => {
     res.json(response);
   });
 
+  api.delete('/cliente/delete/cpfcnpj/12345678901' , (req, res) => {
+    const response = {
+      mesagem: "Dados atualizados com sucesso",
+      status: 201,
+    };
+    res.status(201);
+    res.json(response);
+  });
+   
+
+
 
 
 api.listen(porta, () => {
