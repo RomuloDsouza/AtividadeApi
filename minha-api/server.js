@@ -40,6 +40,15 @@ api.post('/clientes/novo', (req, res) => {
 })
 
 
+api.put("/cliente/update/cpfcnpj/12345678901", (req, res) => {
+    const response = {
+      mesagem: "Dados atualizados com sucesso",
+      status: 200,
+    };
+    res.status(200);
+    res.json(response);
+  });
+
 
 
 api.listen(porta, () => {
