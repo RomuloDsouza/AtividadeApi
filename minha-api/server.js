@@ -31,7 +31,7 @@
 
 const express = require('express');
 const cookieParser = require('cookie-parser');
-const app = express(); // Certifique-se de usar 'app' aqui
+const app = express(); 
 const PORT = 80;
 
 app.use(express.json());
